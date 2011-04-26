@@ -1,0 +1,1043 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%= hook :inside_head do %>
+  <%= render :partial => 'shared/head'%>
+<% end %>
+<style type="text/css"> <!--
+.C1MiniShopCartWithLinks3FDT table {
+		border-collapse:collapse;
+}
+.C1MiniShopCartWithLinks3FDT .enclosing_table {
+		width:auto;
+}
+.C1MiniShopCartWithLinks3FDT .cart_image {
+		text-align:left;
+}
+.C1MiniShopCartWithLinks3FDT .link_list {
+		vertical-align:top;
+	    padding-top:5px;
+	    text-align:left;
+	    width:312px;
+}
+.C1MiniShopCartWithLinks3FDT .login_link {
+		vertical-align:top;
+	    padding-top:5px;
+		text-align:right;
+}
+.C1MiniShopCartWithLinks3FDT .delimiter {
+		padding-left:6px;
+	    padding-right:6px;
+		color:#ffffff;
+}
+.C1MiniShopCartWithLinks3FDT .delimiter_cart {
+		padding-left:6px;
+	    padding-right:6px;
+		padding-top:10px;
+		color:#ffffff;
+}
+.C1MiniShopCartWithLinks3FDT .link_item {
+		text-align:right;
+		padding-top:10px;
+}
+.C1MiniShopCartWithLinks3FDT .minicart_info {
+		text-align:right;
+		padding-top:2px;
+}
+.C1MiniShopCartWithLinks3FDT .login_info {
+		text-align:right;
+	    width:160px;
+	    color:#FFFFFF;
+}
+.C1MiniShopCartWithLinks3FDT .logout_info {
+		text-align:right;
+	    color:#FFFFFF;
+}
+.C1MiniShopCartWithLinks3FDT .link_sign {
+		width:220px;
+	    text-align:right;
+}
+.C1MiniShopCartWithLinks3FDT .link_reg {
+		text-align:right;
+}
+.C1MiniShopCartWithLinks3FDT .search_top {
+	   margin:2px 0px auto 0px;
+}
+.C1MiniShopCartWithLinks3FDT .search_top .categorySelect select {
+	   padding-left:5px;
+	   width:130px;
+}
+.C1MiniShopCartWithLinks3FDT .search_top .input_cell input {
+	   padding-left:5px;
+	   width:135px;
+}
+.C1MiniShopCartWithLinks3FDT .search_top .header_img img {
+	  vertical-align:top;
+	  border-left:1px solid #CCCCCC;
+	  border-top:1px solid #CCCCCC;
+	  border-bottom:1px solid #CCCCCC;
+}
+.C1MiniShopCartWithLinks3FDT .go_button img {
+		text-align:right;
+	    padding-left:5px;
+	    vertical-align:top;
+	    margin-top:1px;
+}
+.C1MiniShopCartWithLinks3FDT .delimiterReg {
+		padding-left:6px;
+	    padding-right:6px;
+		color:#ffffff;
+	    text-align:right;
+}
+.C4CategoryDrop1FDT ul,.C4CategoryDrop1FDT li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+}
+.C4CategoryDrop1FDT ul.menutree li {
+		float: left;
+		padding:0px 0px 0px 0px;
+}
+.C4CategoryDrop1FDT ul.menutree li li {
+		float: none;
+		width: auto;
+		padding-bottom: 0;
+		border:1px solid #fff;
+}
+.C4CategoryDrop1FDT ul.menutree a {
+		display: block;
+}
+.C4CategoryDrop1FDT ul.menutree  ul {
+		width:auto;
+		background-color: #ffffff;
+		display: none;
+		position: absolute;
+		border-bottom:1px solid #d8d8d8;
+	    border-left:1px solid #d8d8d8;
+	    border-right:1px solid #d8d8d8;
+}
+.C4CategoryDrop1FDT ul.menutree ul.foldOut {
+		display: block;
+	    margin-top:8px;
+}
+.C4CategoryDrop1FDT ul.menutree li {
+		position: relative;
+}
+.C4CategoryDrop1FDT ul.menutree li.highlight {
+		background-color:#FFBF1B;
+		padding-top:7px;
+	    padding-right:5px;
+	    height:25px;
+}
+.C4CategoryDrop1FDT ul.menutree li a {
+		padding:0px 18px 0px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_2.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right 5px;
+}
+.C4CategoryDrop1FDT ul.menutree li a:hover {
+		background-color:#FFBF1B;
+		background-position:right 5px;
+}
+.C4CategoryDrop1FDT ul.menutree li a.selected {
+		background-color:#FFBF1B;
+		background-position:right 5px;
+}
+.C4CategoryDrop1FDT ul.menutree li a.noMenu {
+		background-image:none;
+}
+.C4CategoryDrop1FDT ul.menutree li a.noMenu:hover {
+		background-color:#FFBF1B;
+		background-repeat:repeat;
+}
+.C4CategoryDrop1FDT ul.menutree li a.noMenuSelected {
+		background-color:#FFBF1B;
+		background-repeat:repeat;
+		background-position:0px 0px;
+}
+.C4CategoryDrop1FDT .noborderLeft {
+		border-right-style:none;
+}
+.C4CategoryDrop1FDT .DisplayMenu {
+	    border-top:5px solid #FFBF1B;
+	    border-bottom:5px solid #FFBF1B;
+	    border-left:4px solid #FFBF1B;
+	    border-right:4px solid #FFBF1B;
+}
+.C4CategoryDrop1FDT  .borderRight {
+		border-right:4px solid #FFBF1B;
+}
+.C4CategoryDrop1FDT  .Level2 {
+		font-weight:bold;
+	    vertical-align:top;
+	    text-align:left;
+	    padding-left:6px;
+	    padding-top:5px;
+}
+.C4CategoryDrop1FDT .Level2 a.Level2a {
+		background-image:none;
+	    padding-top:3px;
+	    padding-bottom:3px;
+}
+.C4CategoryDrop1FDT .Level2 a.Level2a:hover {
+		background-color:#FFBF1B;
+		background-repeat:repeat;
+	    padding-top:3px;
+	    padding-bottom:3px;
+	    width:115px;
+}
+.C4CategoryDrop1FDT  .Level3 {
+		vertical-align:top;
+	    text-align:left;
+	    padding-left:6px;
+}
+.C4CategoryDrop1FDT .Level3 a.Level4 {
+		background-image:none;
+	    padding-top:3px;
+	    padding-bottom:3px;
+}
+.C4CategoryDrop1FDT .Level3 a.Level4:hover {
+		background-color:#FFBF1B;
+		background-repeat:repeat;
+	    padding-top:3px;
+	    padding-bottom:3px;
+	    width:114px;
+}
+.C4CategoryDrop1FDT table {
+		border-collapse:collapse;
+}
+.C4CategoryDrop1FDT .emptyTopLine {
+		border-bottom:1px dotted #2E2E2E;
+	    width:150px;
+}
+.C4CategoryDrop1FDT ul.menutree li.noselect {
+	  float: left;
+	  padding-top:7px;
+	  padding-right:5px;
+}
+.C4CategoryDrop1FDT ul.menutree li.selectAccross {
+	  background-color:#FFBF1B;
+	  height:25px;
+}
+.C4CategoryDrop1FDT ul.menutree li.highlight a {
+		padding:0px 18px 1px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_1.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right center;
+}
+.C4CategoryDrop1FDT ul.menutree li.noselect a {
+		padding:0px 18px 0px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_2.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right center;
+}
+.C4CategoryDrop1FDT ul.menutree li.noselect a.selected {
+		padding:0px 18px 0px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_1.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right center;
+	    background-color:#FFBF1B;
+}
+.C4CategoryDrop1FDT ul.menutree li.highlightone {
+		background-color:#FFBF1B;
+		padding-top:7px;
+	    padding-right:5px;
+	    height:25px;
+}
+.C4CategoryDrop1FDT ul.menutree li.highlightone a {
+		padding:0px 18px 1px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_1.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right center;
+}
+.C4CategoryDrop1FDT ul.menutree li.noselectselectAccross a {
+		padding:0px 18px 0px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_2.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right center;
+}
+.C4CategoryDrop1FDT ul.menutree li.noselectselectAccross a.selected {
+		padding:0px 18px 0px 5px;
+	    background-image:url('/imageservlet?webImageName=icon_down_arrow_1.gif&languageId=EN');
+	    background-repeat:no-repeat;
+		background-position:right center;
+	    background-color:#FFBF1B;
+}
+.C4CategoryDrop1FDT ul.menutree li.noselectselectAccross {
+	  float: left;
+	  padding-top:7px;
+	  padding-right:5px;
+	  background-color:#FFBF1B;
+	  height:25px;
+}
+.CXHtmlTag1FDT a:link,.CXHtmlTag1FDT a:active,.CXHtmlTag1FDT a:visited {
+		 text-decoration:underline;
+}
+.CXHtmlTag1FDT a:hover {
+		 text-decoration:none;
+}
+.CXHtmlTag1FDT .size_small {
+		 color:#FFFFFF;
+}
+.CXHtmlTag1FDT .novator_footer {
+		 color:#FFFFFF;
+}
+.CXRawHTMLFDT a:link,.CXRawHTMLFDT a:active,.CXRawHTMLFDT a:visited {
+		 text-decoration:underline;
+}
+.CXRawHTMLFDT a:hover {
+		 text-decoration:none;
+}
+.C4C5NewsletterSignup1FDT input {
+	    margin:0px 5px 0px 5px;
+	    width:180px;
+}
+.C4C5NewsletterSignup1FDT .table_style_2 {
+		background-image:url('/imageservlet?webImageName=bg_newsletter.jpg&languageId=EN');
+		background-repeat:no-repeat;
+		height:44px;
+		width:100%;
+}
+.C4C5NewsletterSignup1FDT .table_style_2 .sign_text {
+		font-size:15px;
+		text-align:left;
+		color:#ffffff;
+		padding-left:5px;
+		padding-top:12px;
+		vertical-align:top;
+		width:240px;
+}
+.C4C5NewsletterSignup1FDT .table_style_2 .help_text {
+		text-align:left;
+		padding-left:23px;
+		padding-top:14px;
+		vertical-align:top;
+}
+.C4C5NewsletterSignup1FDT .table_style_2 .sign_input input {
+		padding-left:10px;
+}
+.CXRawHTMLFDT a:link,.CXRawHTMLFDT a:active,.CXRawHTMLFDT a:visited {
+		 text-decoration:underline;
+}
+.CXRawHTMLFDT a:hover {
+		 text-decoration:none;
+}
+.C1NodeNavigation3FDT .node_title {
+		font-weight:bold;
+	    color:#969595;
+	    text-align:left;
+	    padding-left:5px;
+	    vertical-align:top;
+}
+.C1NodeNavigation3FDT td.footer_links {
+		vertical-align:top;
+	    padding-left:5px;
+}
+.C1NodeNavigation3FDT ul {
+			color:#2a245b;
+			list-style-type:none;
+}
+.C1NodeNavigation3FDT li {
+			padding-top:5px;
+			padding-left:8px;
+	        background:url('/imageservlet?webImageName=bullet_footer.gif&languageId=EN') no-repeat;
+			background-position:0 10px;
+	        color:#FFFFFF;
+}
+.C1NodeNavigation3FDT .column_one {
+		width:203px;
+	    cellspacing:0px;
+	    cellpadding:0px;
+		margin-left:3px;
+		margin-top:10px;
+}
+.C1NodeNavigation3FDT .column_two {
+		width:183px;
+	    cellspacing:0px;
+	    cellpadding:0px;
+		margin-left:3px;
+	    margin-top:10px;
+}
+.C1NodeNavigation3FDT .column_three {
+		width:125px;
+	    cellspacing:0px;
+	    cellpadding:0px;
+		margin-left:3px;
+		margin-top:10px;
+}
+.C1NodeNavigation3FDT .column_four {
+		width:160px;
+		margin-left:3px;
+		margin-top:10px;
+}
+.C1NodeNavigation3FDT .color_footer_white,a.color_footer_white:link,a.color_footer_white:visited,a.color_footer_white:active {
+		color:#FFFFFF;
+}
+.C1NodeNavigation3FDT a:hover {
+		 text-decoration:underline;
+}
+.C1NodeNavigation3FDT .borderRight {
+	    border-right:1px solid #FFFFFF;
+}
+.C1NodeNavigation3FDT .node_title_2 {
+		font-weight:bold;
+	    color:#969595;
+	    text-align:left;
+		vertical-align:top;
+}
+.C1NodeNavigation3FDT .color_footer_white_wrap {
+	  color:#FFFFFF;
+	  white-space:nowrap;
+}
+.CXHtmlTag1FDT a:link,.CXHtmlTag1FDT a:active,.CXHtmlTag1FDT a:visited {
+		 text-decoration:underline;
+}
+.CXHtmlTag1FDT a:hover {
+		 text-decoration:none;
+}
+.CXHtmlTag1FDT .size_small {
+		 color:#FFFFFF;
+}
+.CXHtmlTag1FDT .novator_footer {
+		 color:#FFFFFF;
+}
+.CXHtmlTag1FDT a:link,.CXHtmlTag1FDT a:active,.CXHtmlTag1FDT a:visited {
+		 text-decoration:underline;
+}
+.CXHtmlTag1FDT a:hover {
+		 text-decoration:none;
+}
+.CXHtmlTag1FDT .size_small {
+		 color:#FFFFFF;
+}
+.CXHtmlTag1FDT .novator_footer {
+		 color:#FFFFFF;
+}
+
+--></style>
+<style type="text/css">
+ <!--
+.C3CommonHeader1LT_Top_C1R1 {
+		background-color:#000;
+	    margin-left:10px;
+}
+.C3CommonHeader1LT_Top_C2R1 {
+		background-color:#000;
+}
+.C3CommonHeader1LT_Top_C3R1 {
+		background-color:#000;
+	    margin-left:10px;
+	    background-image:url('/imageservlet?webImageName=top-patch.jpg&languageId=EN');
+}
+.C3CommonHeader1LT_Bottom {
+		margin:0px 10px 5px 10px;
+	    background-image:url('/imageservlet?webImageName=bg_nav_980.jpg&languageId=EN');
+	    background-repeat:no-repeat;
+}
+.C3CommonHeader1LT_Bottom_C1R1 {
+		margin:0px 0px 0px 0px;
+}
+.C3CommonHeader1LT_Bottom_C2R1 {
+		margin:8px 5px 0px 1px;
+}
+.C3CommonHeader1LT_Bottom_C1R2 {
+		margin:8px 0px 5px 0px;
+}
+.C3CommonHeader1LT_Top {
+		margin:0px 10px 10px 10px;
+	    background-color:#000;
+	    height:110px;
+}
+.C3CommonHeader1LT_C1R1 {
+	  background-color:#000;
+}
+.C3CommonHeader1LT_C1R2 {
+	  padding-top:5px;
+}
+.C3HomePage10LT_C1R3 {
+	 margin:5px 10px 5px 10px;
+}
+.C3HomePage10LT_C1R4 {
+	 margin:5px 10px 5px 10px;
+}
+.C5CommonFooter5LT {
+		margin:5px 10px 10px 10px;
+		background-color:#000;
+	    background-image:url('/imageservlet?webImageName=bottom-patch.jpg&languageId=EN');
+	    width:980px;
+}
+.C5CommonFooter5LT_C2R1 {
+	    margin-top:15px;
+}
+.C5CommonFooter5LT_C1R2 {
+	    text-align:left;
+	    color:#FFFFFF;
+	    padding-top:15px;
+	    padding-left:5px;
+	    padding-bottom:5px;
+}
+.C5CommonFooter5LT_C2R2 {
+	    text-align:right;
+	    color:#FFFFFF;
+	    padding-top:15px;
+	    padding-right:5px;
+	    padding-bottom:5px;
+}
+
+-->
+</style>
+</head>
+
+<body ><div id="main_table" style="width:1000px;">
+
+
+<div class="omniture">
+<script src="/javascripts/shop/omniture_s_code_1.js" language="JavaScript"></script>
+</div>
+
+<table class="C5CommonPage1LT" cellspacing="0">
+<tr>
+<td  colspan="1" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageTop1" class="C5CommonPage1LT_C1R1">
+<table class="C3CommonHeader1LT" cellspacing="0">
+<tr>
+<td  colspan="1" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageTop1_WPbodyTop4" class="C3CommonHeader1LT_C1R1">
+<table class="C3CommonHeader1LT_Top" cellspacing="0">
+<tr>
+<td  colspan="1" rowspan="1" style="width:250px;"  valign="top" align="left" id="WPpageTop1_WPbodyTop4_C1R1" class="CXImageFDT"><div class="C3CommonHeader1LT_Top_C1R1" > 
+
+<a href="http://www.shoppersstop.com/index.jsp.vr" name="top" > <img width="250" height="100" title="Shoppers Stop - India's Leading Shopping Store" src="/images/shop/imageservlet" alt="Shoppers Stop - India's Leading Shopping Store" /> </a></div></td>
+
+<td  colspan="1" rowspan="1" style="width:350px;"  valign="top" align="left" id="WPpageTop1_WPbodyTop4_C2R1" class="CXImageFDT"><div class="C3CommonHeader1LT_Top_C2R1" > 
+
+
+
+<img src="/images/shop/imageservlet(1)" alt="" /></div></td>
+
+<td  colspan="1" rowspan="1" style="width:380px;"  valign="top" align="left" id="WPpageTop1_WPbodyTop4_C3R1" class="C1MiniShopCartWithLinks3FDT"><div class="C3CommonHeader1LT_Top_C3R1" > 
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+<!--<table class="enclosing_table"> <tr> <td class="link_list" > <table class="links"> <tr> <td class="login_link" colspan="7"> <div id="logged_out"> <table> <tr> <td class="link_sign"> <a href="https://www.shoppersstop.com/accountSignIn.jsp.vr" class="color_site_white over_underline"> Sign In </a> </td><td class="delimiter">&#124;</td> <td class="link_reg"> <a href="https://www.shoppersstop.com/accountRegister.jsp.vr" class="color_site_white over_underline"> Register here </a> </td></tr> </table> </div> <div id="logged_in" class="display_none" > <form name="logOutForm" action="https://www.shoppersstop.com/formhandlerservlet" method="post"><input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/><input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/><input type="hidden" name="currentNodeLink" value="/index.jsp"/><input type="hidden" name="formName" value="logOutForm"/> <table> <tr> <td class="login_info"> Welcome <span class="fName" id="first_name1"></span>&nbsp; <a href="javascript:submitSiteLogOutForm('/index.jsp');" class="color_site_white over_underline"> Log Out </a> </td> <td class="delimiterReg">&#124;</td> <td class="logout_info"> not &nbsp;<span id="first_name2" class="fName"></span>? <a href="javascript:submitSiteLogOutForm('/accountSignIn.jsp');" class="color_site_white over_underline"> Click here </a> </td> </tr> </table> </form> </div> <td></tr> <!-- Display all the supplied links <tr> <td class="link_item"> <a href="https://www.shoppersstop.com/accountOrderStatus.jsp.vr" class="color_site_white over_underline"> Order Status </a> </td> <td class="delimiter_cart"> &#124; </td> <td class="link_item"> <a href="http://www.shoppersstop.com/customerCare.jsp.vr" class="color_site_white over_underline"> Customer Care </a> </td> <td class="delimiter_cart"> &#124; </td> <td class="link_item"> <a href="https://www.shoppersstop.com/accountHome.jsp.vr" class="color_site_white over_underline"> My Account </a> </td> <td class="delimiter_cart"> &#124; </td> <td class="link_item"> <a href="https://www.shoppersstop.com/shopCartList.jsp.vr" class="color_site_white over_underline"> Shopping Bag </a> </td> </tr> <tr> <td class="minicart_info" colspan="7"> <span id="full_cart" class="cart_full" style="display:none;"> <a href="https://www.shoppersstop.com/shopCartList.jsp.vr" class="cart_link color_site_white over_underline"> <span id="cart_items"></span>&nbsp;<span id="item_text"></span> <span class="price_delimiter">-</span> <span id="cart_total"></span> </a> </span> </td> </tr> </table> </td> <td class="cart_image"> <img title="Shoppers Stop - Shop Online" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=icon_new_cart.jpg&amp;languageId=EN" alt="Shoppers Stop - Shop Online" /> </td> </tr> <tr> <td colspan="2" valign="top"> <form name="simpleSearch" action="http://www.shoppersstop.com/formhandlerservlet" method="get"><input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/><input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/><input type="hidden" name="currentNodeLink" value="/index.jsp"/><input type="hidden" name="formName" value="simpleSearch"/> <table class="search_top"> <tr> <td class="header_img"> <img src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=header_search.jpg&amp;languageId=EN" alt="" /> </td> <td class="categorySelect"> <select name="searchCategory" id="site_global_search"> <option value="root_category">All Departments</option> <option value="01">Men</option> <option value="02">Women</option> <option value="03">Kids</option> <option value="05">Fragrances & Beauty</option> <option value="04">Home & Travel</option> <option value="06">Gift Ideas</option> <option value="07">Special Deals</option> </select> </td> <td class="input_cell"> <input onkeypress="return submitEnter(event,'simpleSearch','search()')" type="text" name="searchString" value="Enter Key word" class="input" maxlength="100" onFocus="doClear(this)"/> </td> <td class="go_button"> <a href="javascript:search()" ><img src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=btn_search.jpg&amp;languageId=EN" alt="" /> </a> </td> </tr> </table> </form> </td> </tr> </table>-->
+<%= render 'shared/nav_bar' %>
+</div></td>
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td  colspan="1" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageTop1_WPbodyMain3" class="C3CommonHeader1LT_C1R2">
+<table class="C3CommonHeader1LT_Bottom" cellspacing="0">
+<tr>
+<td  colspan="1" rowspan="1" style="width:700px;"  valign="top" align="left" id="WPpageTop1_WPbodyMain3_C1R1" class="C4CategoryDrop1FDT"><div class="C3CommonHeader1LT_Bottom_C1R1" > 
+
+<ul class="menutree"> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Men</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-262-315362.html"> Men's Apparel </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Shirts-262-315742.html"> Shirts</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Trousers-262-315702.html"> Trousers</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Jeans-262-315782.html"> Jeans</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-T-shirts--Polos-262-315682.html"> T-shirts & Polos</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Kurta,Pyjamas-Stoles-262-315762.html"> Kurta,Pyjamas& Stoles</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Ties-262-315722.html"> Ties</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Innerwear-262-315802.html"> Innerwear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Shorts-262-318142.html"> Shorts</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Winterwear-262-332622.html"> Winterwear</a> </td> </tr> </table> </td> </tr> </table> </div> </td> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-262-315382.html"> Men's Accessories </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Wallets-262-315822.html"> Wallets</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Belts-262-315862.html"> Belts</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Watches-262-315902.html"> Watches</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Sunglasses-262-315922.html"> Sunglasses</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Pens-262-315882.html"> Pens</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Cufflinks-262-318042.html"> Cufflinks</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Socks--Handkerchiefs-262-315842.html"> Socks & Handkerchiefs</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Accessories-Mens-Jewellery-262-315942.html"> Men's Jewellery</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Footwear-262-329842.html"> Men's Footwear </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Footwear-Formal-Footwear-262-329862.html"> Formal Footwear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Mens-Footwear-Casual-Footwear-262-329882.html"> Casual Footwear</a> </td> </tr> </table> </td> </tr> </table> </div> </td> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Featured-Brands-262-330442.html"> Featured Brands </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Featured-Brands-Mustang-Jeans-262-330302.html"> Mustang Jeans</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Men-Featured-Brands-United-Colors-Of-Benetton-262-333742.html"> United Colors Of Benetton</a> </td> </tr> </table> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_1.gif&amp;languageId=EN" alt="" /> </li> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Women</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-262-315402.html"> Women's Apparel </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Salwar-and-Churidar-Suits-262-316122.html"> Salwar and Churidar Suits</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Kurtas-262-317302.html"> Kurtas</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Churidars,Salwar-and-Dupatta-262-325242.html"> Churidars,Salwar and Dupatta</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Sarees-262-329042.html"> Sarees</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-T-Shirts--Tops-262-316042.html"> T-Shirts & Tops</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Office-Wear-262-316062.html"> Office Wear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Skirts--Dresses-262-316082.html"> Skirts & Dresses</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Jeans--Casual-Bottomwear-262-316182.html"> Jeans & Casual Bottomwear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Trousers-262-315962.html"> Trousers</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Lingerie-262-316002.html"> Lingerie</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Night-wear-262-316022.html"> Night wear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Winterwear-262-332602.html"> Winterwear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Maternity-wear-262-333102.html"> Maternity wear</a> </td> </tr> </table> </td> </tr> </table> </div> </td> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-262-315422.html"> Women's Accessories </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Handbags-262-316282.html"> Handbags</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Fine-Jewellery-262-324042.html"> Fine Jewellery</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Artificial-and-Fashion-Jewellery-262-316302.html"> Artificial and Fashion Jewellery</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Watches-262-316222.html"> Watches</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Sunglasses-262-316242.html"> Sunglasses</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Pens-262-316202.html"> Pens</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Wallets-262-316262.html"> Wallets</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Socks-262-324002.html"> Socks</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Umbrella-262-333202.html"> Umbrella</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Footwear-262-329922.html"> Women's Footwear </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Footwear-Sandals-and-Slipons-262-329942.html"> Sandals and Slipons</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Footwear-Evening-Wear-262-329962.html"> Evening Wear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Womens-Footwear-Shoes-and-Boots-262-329982.html"> Shoes and Boots</a> </td> </tr> </table> </td> </tr> </table> </div> </td> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-262-329222.html"> Featured Brands </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-Hidesign-262-329242.html"> Hidesign</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-noi-262-329322.html"> noi</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-Sparkles-262-332582.html"> Sparkles</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-Maybelline-262-332962.html"> Maybelline</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-Van-Heusen-262-333502.html"> Van Heusen</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Women-Featured-Brands-AND-262-333602.html"> AND</a> </td> </tr> </table> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_2.gif&amp;languageId=EN" alt="" /> </li> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Kids</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-262-315462.html"> Kid's Apparel </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-Girls-262-316402.html"> Girls</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-Boys-262-315482.html"> Boys</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-Baby-Apparel-262-329682.html"> Baby Apparel</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-Socks-262-332362.html"> Socks</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Watches-262-328882.html"> Watches </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-262-315442.html"> Toys </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Early-Learning-Center-262-328862.html"> Early Learning Center</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Action-Figures-262-324162.html"> Action Figures</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Soft-Toys-262-316342.html"> Soft Toys</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Dolls-262-316362.html"> Dolls</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Wheels-262-324082.html"> Wheels</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Activity--Games-262-316382.html"> Activity & Games</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Toys-Stationery-262-332722.html"> Stationery</a> </td> </tr> </table> </td> </tr> </table> </div> </td> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-262-328242.html"> Mothercare </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Baby-262-327402.html"> Baby</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Boyswear-262-327642.html"> Boyswear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Girlswear-262-327762.html"> Girlswear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Travel-262-327862.html"> Travel</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Feeding-262-327942.html"> Feeding</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Toiletries-262-330182.html"> Toiletries</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Toys--Gifts-262-328082.html"> Toys & Gifts</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Bath-time-262-328122.html"> Bath time</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Bedding-262-328182.html"> Bedding</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Footwear-262-328742.html"> Footwear</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Socks-262-333222.html"> Socks</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Home-Safety-262-330202.html"> Home Safety</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Kids-Mothercare-Maternity-262-328222.html"> Maternity</a> </td> </tr> </table> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_3.gif&amp;languageId=EN" alt="" /> </li> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Fragrances & Beauty</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Cosmetics,-Skincare-and-Haircare-262-315542.html"> Cosmetics, Skincare and Haircare </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Cosmetics,-Skincare-and-Haircare-Cosmetics-and-Makeup-262-324622.html"> Cosmetics and Makeup</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Cosmetics,-Skincare-and-Haircare-Skincare-262-324662.html"> Skincare</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Cosmetics,-Skincare-and-Haircare-Haircare-262-324682.html"> Haircare</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Fragrances-262-315562.html"> Fragrances </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Fragrances-Perfumes-and-Deos-For-Women-262-328762.html"> Perfumes and Deos For Women</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Fragrances-Perfumes-and-Deos-for-Men-262-328782.html"> Perfumes and Deos for Men</a> </td> </tr> </table> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_4.gif&amp;languageId=EN" alt="" /> </li> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Home & Travel</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-262-315522.html"> Home </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-Bed-262-316622.html"> Bed</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-Bath-262-316642.html"> Bath</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-Kitchen-262-316582.html"> Kitchen</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-Home-and-Personal-Appliances-262-328622.html"> Home and Personal Appliances</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-Home-Deacutecor-262-316602.html"> Home D&eacute;cor</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Home-Home-safety-262-333182.html"> Home safety</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Travel-262-315502.html"> Travel </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Travel-Luggage-262-316542.html"> Luggage</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Travel-Travel-Bags-262-316562.html"> Travel Bags</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Travel-Accessories-262-316522.html"> Accessories</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Home--Travel-Travel-Kids-travel-accessories-262-333122.html"> Kids travel accessories</a> </td> </tr> </table> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_5.gif&amp;languageId=EN" alt="" /> </li> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Gift Ideas</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-262-315602.html"> For Him </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Watches-262-316742.html"> Watches</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Perfumes-and-Deos-for-Men-262-316702.html"> Perfumes and Deos for Men</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Cufflinks-262-318062.html"> Cufflinks</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Ties-262-316722.html"> Ties</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Pens-262-316762.html"> Pens</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Wallets-262-328902.html"> Wallets</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-262-315622.html"> For Her </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Fine-Jewellery-262-328422.html"> Fine Jewellery</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Artificial-and-Fashion-Jewellery-262-316842.html"> Artificial and Fashion Jewellery</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Pens-262-316802.html"> Pens</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Watches-262-316822.html"> Watches</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Handbags-262-316862.html"> Handbags</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Perfumes-and-Deos-for-Women-262-316782.html"> Perfumes and Deos for Women</a> </td> </tr> </table> </td> </tr> </table> </div> </td> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-262-315642.html"> For Home </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Crystals-262-316962.html"> Crystals</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Vases-262-316902.html"> Vases</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Aromatic-Products-262-324862.html"> Aromatic Products</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Accessories-262-325022.html"> Accessories</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Flower-262-325042.html"> Flower</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Planters-262-325062.html"> Planters</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Idols,-Frames--Leaf-cards-262-328922.html"> Idols, Frames & Leaf cards</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Home-Clocks-262-329082.html"> Clocks</a> </td> </tr> </table> </td> </tr> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Gift-Ideas-Gift-Voucher-262-318022.html"> Gift Voucher </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_6.gif&amp;languageId=EN" alt="" /> </li> <li class="noselect"> <a class="font_bold size_extra_large_13 ">Special Deals</a> <ul> <table class="DisplayMenu"> <tr> <td valign="top" class="borderRight"> <div class="content" style="width:150px;padding-bottom:10px;"> <table> <tr> <td class="Level2"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Special-Deals-Special-Deals-262-332282.html"> Special Deals </a> </td> </tr> <tr> <td class="emptyTopLine"> </td> </tr> <tr> <td > <table> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Special-Deals-Special-Deals-Mens-262-331082.html"> Mens</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Special-Deals-Special-Deals-Womens-262-331162.html"> Womens</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Special-Deals-Special-Deals-Kids-262-331282.html"> Kids</a> </td> </tr> <tr> <td class="Level3"> <a style="background-image:none;padding-top:3px;padding-bottom:3px;width:114px;" href="http://www.shoppersstop.com/cat-Special-Deals-Special-Deals-Home--Travel-262-331342.html"> Home & Travel</a> </td> </tr> </table> </td> </tr> </table> </div> </td> </tr> </table> </ul> </li> <li class="delimiter"> <img title="" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=delimiter_top_nav_7.gif&amp;languageId=EN" alt="" /> </li> </ul></div></td>
+
+<td  colspan="1" rowspan="1" style="width:280px;"  valign="top" align="left" id="WPpageTop1_WPbodyMain3_C2R1" class="CXHtmlTag1FDT"><div class="C3CommonHeader1LT_Bottom_C2R1" > 
+
+<span class=" display_block  padding_top_5  padding_bottom_5  size_large  width_full  background_box_style_5 " >
+	<b>Check <a href='deliveryArea.jsp.vr' style='color:#DC8E00;text-decoration:none;'>Pin Codes</a> we deliver to &#124; May we <a style='color:#DC8E00;text-decoration:none;' href='contactus.jsp.vr'>help</a> &#63;</b>	
+</span>
+
+</div></td>
+
+</tr>
+<tr>
+<td  colspan="2" rowspan="1" style="width:980px;"  valign="top" align="left" id="WPpageTop1_WPbodyMain3_C1R2" class="CXRawHTMLFDT"><div class="C3CommonHeader1LT_Bottom_C1R2" > 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="81%"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="40%" height="30" bgcolor="#ffc114"><div align="center"><font size="2"><strong>FREE DELIVERY</strong> on all orders. Limited Period Offer.</font></div></td><td width="30%" bgcolor="#b1b1b3"><div align="center"><a href="http://www.shoppersstop.com/deliveriesReturns.jsp.vr" style="text-decoration:none"><font color="#000000" size="2">Easy Exchanges and Returns</font></a></div></td><td width="30%" bgcolor="#ffc114"><div align="center"><a href="https://www.shoppersstop.com/accountSignIn.jsp.vr" style="text-decoration:none"><font color="#000000" size="2">Sign In</font></a> &nbsp;&#124;&nbsp; <a href="https://www.shoppersstop.com/accountRegister.jsp.vr" style="text-decoration:none"><font color="#000000" size="2">Register here</font></a></div></td></tr><tr><td height="2" colspan="3"></td></tr><tr><td height="30" colspan="3" bgcolor="#49494b"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="40%"><div align="center"><font color="#FFFFFF"> <a href="http://www.shoppersstop.com/changeyourlook.jsp.vr" style="text-decoration:none"><font size="2" color="#FFFFFF">Campus Rocks </font></a></font></div></td><td><font color="#FFFFFF">&#124;</font></td><td width="30%"><div align="center"><font color="#FFFFFF"> <a href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-262-315622.html" style="text-decoration:none"><font size="2" color="#FFFFFF">Gift Ideas for Her</font></a></font></div></td><td><font color="#FFFFFF">&#124;</font></td><td width="40%"><div align="center"><a href="http://www.shoppersstop.com/catalogservlet?categoryId=318022" style="text-decoration:none"><Font color="#ffffff" size="2">Buy Gift Vouchers</Font></a></div></td></tr></table></td></tr></table></td><td width="1%" valign="middle">&nbsp;</td><td width="7%" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><div align="center"><img src="http://www.shoppersstop.com/imageservlet?webImageName=SS_facebook.gif &amp;languageId=EN" width="18" height="18" /></div></td></tr><tr><td><div align="center"><font face="Arial, Helvetica, sans-serif" size="1">on Facebook</font></div></td></tr><tr><td align="center"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshoppersstopindia&amp;layout=button_count&amp;show_faces=true&amp;width=50&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="No" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowtransparency="true"></iframe></td></tr></table></td></tr></table></div></td>
+
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td  colspan="1" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageBody1" class="C5CommonPage1LT_C1R2">
+<table class="C3HomePage10LT" cellspacing="0">
+<tr>
+<td  colspan="3" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageBody1_C1R1" class="CXFlashFDT"><div class="C3HomePage10LT_C1R1" > 
+
+    <script language="javascript" type="text/javascript" src="/swfobject.js"></script>
+
+<div id="flash_movie_1">
+	<div id="wrapper" class="container">
+    <% if content_for?(:sidebar) %>
+    <div id="sidebar">
+      <%= hook :sidebar do %>
+        <%= yield :sidebar %>
+      <% end %>
+    </div>
+    <% end %>
+
+    <div id="content">
+      <%= breadcrumbs(@taxon) if @taxon %>
+      <% if flash.notice %>
+      <div class="flash notice"><%= flash.notice %></div>
+      <% end %>
+      <% if flash[:error] %>
+      <div class="flash errors"><%= flash[:error] %></div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </div> <!--body content-->
+</div>
+
+<!--<script type="text/javascript">
+	// <![CDATA[
+	var so = new SWFObject("/imageservlet?webImageName=home_page_01_v11.swf&languageId=EN", "", "1000", "400", "high", "#FFFFFF");
+	so.addParam("wmode", "transparent");
+    so.write("flash_movie_1");
+	// ]]>
+</script>-->
+</div></td>
+
+</tr>
+<tr>
+<td  colspan="1" rowspan="1" style="width:400px;"  valign="top" align="left" id="WPpageBody1_C1R2" class="CXImageMapSSLExternalLinkFDT"><div class="C3HomePage10LT_C1R2" > 
+
+<form name="shopByFormLink" action="http://www.shoppersstop.com/formhandlerservlet" method="get"><input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/><input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/><input type="hidden" name="currentNodeLink" value="/index.jsp"/><input type="hidden" name="formName" value="shopByFormLink"/> <input type="hidden" name="categoryName" value=""/> <map id="myMap2" name="myMap2"> <area shape="rect" alt=" Women's Apparel > Skirts Dresses" href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-Skirts--Dresses-262-316082.html" coords="4,2,268,241" target="" rel="" /> <area shape="" alt="Crossword" href="http://www.crossword.in/" coords="10,249,263,312" target="_blank" rel="" /> <area shape="rect" alt="Men's Apparel > Shirts" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Shirts-262-315742.html" coords="274,4,398,243" target="" rel="" /> </map> <img usemap="#myMap2" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=home_promo_01_v5.jpg&amp;languageId=EN" alt="" /> <input type="hidden" id="searchStringId" name="searchString" value=""/> </form>
+
+<script type="text/javascript">
+    function shopBySearch(cat) {
+        //$('searchStringId').value = cat;
+	var catstr=cat;
+	if(catstr.length>9)
+	{	var temp = new Array();
+		temp =catstr.split(' ');
+		var sub=temp[0].substr(9);
+	}
+	document.forms['shopByFormLink'].categoryName.value =sub;
+    document.forms['shopByFormLink'].searchString.value = cat;
+    document.forms['shopByFormLink'].actionName.value = 'shoppersBasicSearch';
+	document.forms['shopByFormLink'].targetNodeLink.value = '/shopBy.jsp';
+    document.forms['shopByFormLink'].submit();
+    }
+
+   function showFrame(url,type){
+        if(type=='verisign'){
+            window.open(url,'noiframe','resizable=yes,width=550,height=600')
+        }
+
+        if(type=='master'){
+           window.open(url,'noiframe','resizable=yes,width=550,height=500')
+        }
+
+        if(type=='visa'){
+           window.open(url,'noiframe','resizable=yes,width=1000,height=400')
+        }
+   }
+</script>
+</div></td>
+
+<td  colspan="1" rowspan="1" style="width:400px;"  valign="top" align="left" id="WPpageBody1_C2R2" class="CXImageMapSSLExternalLinkFDT"><div class="C3HomePage10LT_C2R2" > 
+<form name="spring2011" action="http://www.shoppersstop.com/formhandlerservlet" method="get"><input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/><input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/><input type="hidden" name="currentNodeLink" value="/index.jsp"/><input type="hidden" name="formName" value="spring2011"/> <input type="hidden" name="categoryName" value=""/> <map id="myMap3" name="myMap3"> <area shape="rect" alt="Men's Apparel > Shirts" href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-Shirts-262-315742.html" coords="-5,1,132,236" target="" rel="" /> <area shape="rect" alt="Womens Accessories - Artificial and Fashion Jewellery " href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=/shopBy.jsp&currentNodeLink=/artificialJewellery.jsp&formName=shopByFormLink&categoryName=020210&searchString=category_020210 brand_pretty_women" coords="143,-15,399,240" target="" rel="" /> <area shape="rect" alt="First Update" href="http://corporate.shoppersstop.com/firstupdate/febmar2011/index.html" coords="223,249,400,312" target="_blank" rel="" /> </map> <img usemap="#myMap3" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=home_promo_02_v4.jpg&amp;languageId=EN" alt="" /> <input type="hidden" id="searchStringId" name="searchString" value=""/> </form>
+<script type="text/javascript">
+    function shopBySearch(cat) {
+        //$('searchStringId').value = cat;
+	var catstr=cat;
+	if(catstr.length>9)
+	{	var temp = new Array();
+		temp =catstr.split(' ');
+		var sub=temp[0].substr(9);
+	}
+	document.forms['spring2011'].categoryName.value =sub;
+    document.forms['spring2011'].searchString.value = cat;
+    document.forms['spring2011'].actionName.value = 'shoppersBasicSearch';
+	document.forms['spring2011'].targetNodeLink.value = '/shopBy.jsp';
+    document.forms['spring2011'].submit();
+    }
+
+   function showFrame(url,type){
+        if(type=='verisign'){
+            window.open(url,'noiframe','resizable=yes,width=550,height=600')
+        }
+
+        if(type=='master'){
+           window.open(url,'noiframe','resizable=yes,width=550,height=500')
+        }
+
+        if(type=='visa'){
+           window.open(url,'noiframe','resizable=yes,width=1000,height=400')
+        }
+   }
+</script>
+
+</div></td>
+
+<td  colspan="1" rowspan="1" style="width:200px;"  valign="top" align="left" id="WPpageBody1_C3R2" class="CXImageMapSSLExternalLinkFDT"><div class="C3HomePage10LT_C3R2" > 
+
+
+<form name="Ads" action="http://www.shoppersstop.com/formhandlerservlet" method="get"><input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/><input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/><input type="hidden" name="currentNodeLink" value="/index.jsp"/><input type="hidden" name="formName" value="Ads"/> <input type="hidden" name="categoryName" value=""/> <map id="myMap4" name="myMap4"> <area shape="rect" alt=" Women's Accessories > Fine Jewellery > Sparkles Pendant Set - 7662 " href="http://www.shoppersstop.com/cat-Women-Womens-Accessories-Fine-Jewellery-Sets-Sparkles-Pendant-Set---7662-262.html" coords="10,0,193,240" target="" rel="" /> <area shape="rect" alt="First Update" href="http://corporate.shoppersstop.com/firstupdate/febmar2011/index.html" coords="-10,261,27,324" target="_blank" rel="" /> <area shape="rect" alt="" href="http://corporate.shoppersstop.com/firstworld/First-World-Tieups-April-2011/emailer.html" coords="33,260,191,325" target="_blank" rel="" /> </map> <img usemap="#myMap4" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=home_promo_03_v6.jpg&amp;languageId=EN" alt="" /> <input type="hidden" id="searchStringId" name="searchString" value=""/> </form>
+<script type="text/javascript">
+    function shopBySearch(cat) {
+        //$('searchStringId').value = cat;
+	var catstr=cat;
+	if(catstr.length>9)
+	{	var temp = new Array();
+		temp =catstr.split(' ');
+		var sub=temp[0].substr(9);
+	}
+	document.forms['Ads'].categoryName.value =sub;
+    document.forms['Ads'].searchString.value = cat;
+    document.forms['Ads'].actionName.value = 'shoppersBasicSearch';
+	document.forms['Ads'].targetNodeLink.value = '/shopBy.jsp';
+    document.forms['Ads'].submit();
+    }
+
+   function showFrame(url,type){
+        if(type=='verisign'){
+            window.open(url,'noiframe','resizable=yes,width=550,height=600')
+        }
+
+        if(type=='master'){
+           window.open(url,'noiframe','resizable=yes,width=550,height=500')
+        }
+
+        if(type=='visa'){
+           window.open(url,'noiframe','resizable=yes,width=1000,height=400')
+        }
+   }
+</script>
+</div></td>
+
+</tr>
+<tr>
+<td  colspan="3" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageBody1_C1R3" class="C4C5NewsletterSignup1FDT"><div class="C3HomePage10LT_C1R3" > 
+
+
+<form name="newsletter_form" action="http://shoppers.dev.novator.com/formhandlerservlet" method="post" onsubmit="javascript:return onSubmitNewsLetter()"> <input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/> <input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/> <input type="hidden" name="currentNodeLink" value="/index.jsp"/> <input type="hidden" name="formName" value="newsletter_form"/> <table class=" table_style_2 " cellspacing="0" cellpadding="0"> <tr> <td class="sign_text"> Sign Up to receive our Special Offers </td> <td class="sign_input"> <input type="text" name="email" value="Enter your Email address here" maxlength="60" onFocus="doClear(this)"/> </td> <td><a href="javascript:submitNewsletterForm('newsletter_form')"> <img src="/imageservlet?webImageName=btn_newsletter.jpg&languageId=en_us" alt="go"/></a></td> <td class="help_text">May we Assist you&#63;&#45; Call&#45;91&#45;022&#45;66486648 | &#35;1&#45;800&#45;209&#45;6648 | Email:<a href='mailto:estore@shoppersstop.com'>estore@shoppersstop.com</a></td> </tr> </table> </form>
+
+<div id="signUpErrorMessage"></div>
+<script type="text/javascript">
+function submitNewsletterForm(formName) {
+		var frm = document.forms[formName];
+        // This is a dummy targetNodeLink just to set the value
+        document.forms[formName].targetNodeLink.value = '/index.jsp';
+        connect(frm, 'formhandlerservlet?actionName=newsletterSignUp', 'text', changeNewsletterPreferences);
+}
+
+function changeNewsletterPreferences(newsObj){
+    if(newsObj.url){
+        document.location = newsObj.url;
+    }
+}
+
+function checkEnter(e,formName){ //e is event object passed from function invocation
+var characterCode;
+if(e && e.which){ //if which property of event object is supported (NN4)
+    e = e
+    characterCode = e.which //character code is contained in NN4's which property
+}
+else{
+    e = e
+    characterCode = e.keyCode //character code is contained in IE's keyCode property
+}
+
+if(characterCode == 13){ //if generated character code is equal to ascii 13 (if enter key)
+	    var frm = document.forms[formName];
+        // This is a dummy targetNodeLink just to set the value
+        document.forms[formName].targetNodeLink.value = '/index.jsp';
+        connect(frm, 'formhandlerservlet?actionName=newsletterSignUp', 'text', changeNewsletterPreferences);
+		return false;
+    }else{
+	    return true;
+	}
+}
+
+function onSubmitNewsLetter(){
+	    var frm = document.forms["newsletter_form"];
+        // This is a dummy targetNodeLink just to set the value
+        frm.targetNodeLink.value = '/index.jsp';
+        connect(frm, 'formhandlerservlet?actionName=newsletterSignUp', 'text', changeNewsletterPreferences);
+		return false;
+}
+</script></div></td>
+
+</tr>
+<tr>
+<td  colspan="3" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageBody1_C1R4" class="CXRawHTMLFDT"><div class="C3HomePage10LT_C1R4" > 
+Shoppersstop.com offers a truly remarkable shopping experience on the Internet. With an unparalleled assortment of the leading international and national brands in <a href="http://www.shoppersstop.com/cat-Men-Mens-Apparel-262-315362.html">mens clothing</a>, <a href="http://www.shoppersstop.com/cat-Women-Womens-Apparel-262-315402.html">womens apparel</a>, and <a href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-262-315462.html">kids clothes</a>; gifts and fashion accessories like <a href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Watches-262-316822.html">ladies watches</a>, <a href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Him-Watches-262-316742.html">men&rsquo;s watches</a>, <a href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Artificial-and-Fashion-Jewellery-262-316842.html">artificial jewellery</a>, <a href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Fine-Jewellery-262-328422.html">fine jewelry</a>, <a href="http://www.shoppersstop.com/cat-Gift-Ideas-For-Her-Handbags-262-316862.html">handbags</a>, <a href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Fragrances-262-315562.html">fragrances</a>, <a href="http://www.shoppersstop.com/cat-Fragrances--Beauty-Cosmetics,-Skincare-and-Haircare-262-315542.html">cosmetics</a>, footwear; <a href="http://www.shoppersstop.com/cat-Home--Travel-Home-262-315522.html">home furnishing and decor products</a>, we are an online shopping destination of choice. Our customer centricity and relentless pursuit to set new benchmarks in retail has made us the leading chain of department stores in India. We take immense pride in welcoming you to our online department store, that offers you the convenience to shop for some of the <a href="https://www.shoppersstop.com/allBrands.jsp.vr">best lifestyle brands</a> online anytime, anywhere. Explore our extensive range of men&rsquo;s, women&rsquo;s and <a href="http://www.shoppersstop.com/cat-Kids-Kids-Apparel-262-315462.html">kids apparel</a> and accessories from leading brands.<br /><br />&#187;&nbsp;<b>Menswear</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Findex.jsp&formName=shopByFormLink&categoryName=0101&searchString=category_0101+brand_louis_philippe">Louis Philippe</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Findex.jsp&formName=shopByFormLink&categoryName=0101&searchString=category_0101+brand_van_heusen">Van Heusen</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Findex.jsp&formName=shopByFormLink&categoryName=0101&searchString=category_0101+brand_wrangler">Wrangler</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0101&searchString=category_0101+brand_pepe">Pepe</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0101&searchString=category_0101+brand_lee">Lee</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=315362">view all Menswear</a>&nbsp;&#187;&nbsp;<b>Womenswear</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Findex.jsp&formName=shopByFormLink&categoryName=0201&searchString=category_0201+brand_biba">Biba</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0201&searchString=category_0201+brand_remanika">Remanika</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Findex.jsp&formName=shopByFormLink&categoryName=0201&searchString=category_0201+brand_enamor">Enamor</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0201&searchString=category_0201+brand_sepia">Sepia</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0201&searchString=category_0201+brand_lovable">Lovable</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=315402">view all Womenswear</a>&nbsp;&#187;&nbsp;<b>Kidswear &amp; Toys </b> &#8211; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=328242">Mothercare</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=328862">Early Learning Center</a>&nbsp;&#187;&nbsp;<b>Accessories</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Findex.jsp&formName=shopByFormLink&categoryName=0202&searchString=category_0202+brand_hidesign">Hidesign</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FcatList1.jsp&formName=shopByFormLink&categoryName=010208&searchString=category_010208+brand_ray_ban">Ray Ban</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FclpMensAcc.jsp&formName=shopByFormLink&categoryName=0102&searchString=category_0102+brand_sheaffer">Sheaffer</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FclpWomensAcc.jsp&formName=shopByFormLink&categoryName=0202&searchString=category_0202+brand_gili">Gili</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0202&searchString=category_0202+brand_sparkles">Sparkles</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FclpWomensAcc.jsp&formName=shopByFormLink&categoryName=0202&searchString=category_0202+brand_diti">DITI</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=315382">view all Men's Accessories</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=315422">view all Women's Accessories</a>&nbsp;&#187;&nbsp;<b>Perfumes</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FclpFragranceBeuty.jsp&formName=shopByFormLink&categoryName=0502&searchString=category_0502+brand_calvin_klein">Calvin Klein</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0502&searchString=category_0502+brand_davidoff">Davidoff</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0502&searchString=category_0502+brand_playboy">Play Boy</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0502&searchString=category_0502+brand_ralph_lauren">Ralph Lauren</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0502&searchString=category_0502+brand_dkny">DKNY</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=328782">view all Men's Perfumes</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=328762">view all Women's Perfumes</a>&nbsp;&#187;&nbsp;<b>Home</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FclpHomeTravel.jsp&formName=shopByFormLink&categoryName=0402&searchString=category_0402+brand_bajaj_electrical">Bajaj Electrical</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0402&searchString=category_0402+brand_magppie">Magppie</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0402&searchString=category_0402+brand_morphy_richards">Morphy Richards</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0402&searchString=category_0402+brand_portico">Portico</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0402&searchString=category_0402+brand_spaces">Spaces</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=315522">view all Home</a>&nbsp;&#187;&nbsp;<b>Watches</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2Fmenwatch.jsp&formName=shopByFormLink&categoryName=010207&searchString=category_010207+brand_casio">Casio</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=010207&searchString=category_010207+brand_citizen">Citizen</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=010207&searchString=category_010207+brand_fastrack">Fastrack</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=010207&searchString=category_010207+brand_fossil">Fossil</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=010207&searchString=category_010207+brand_titan">Titan</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=315902">view Men's Watches</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=316222">view Women's Watches </a>&nbsp;&#187;&nbsp;<b>Footwear</b> &#8211; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FcatList1.jsp&formName=shopByFormLink&categoryName=0103&searchString=category_0103+brand_id">ID</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0103&searchString=category_0103+brand_lee_cooper">Lee Cooper</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0103&searchString=category_0103+brand_red_tape">Red Tape</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FcatList1.jsp&formName=shopByFormLink&categoryName=0204&searchString=category_0204+brand_catwalk">Catwalk</a> &#124; <a href="http://www.shoppersstop.com/formhandlerservlet?actionName=shoppersBasicSearch&targetNodeLink=%2FshopBy.jsp&currentNodeLink=%2FshopBy.jsp&formName=shopByFormLink&categoryName=0204&searchString=category_0204+brand_inc.5">INC.5</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=329842">view Men's Footwear</a> &#124; <a href="http://www.shoppersstop.com/catalogservlet?categoryId=329922">view Women's Footwear </a></div></td>
+
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td  colspan="1" rowspan="1" style="width:1000px;"  valign="top" align="left" id="WPpageBottom1" class="C5CommonPage1LT_C1R3">
+<table class="C5CommonFooter5LT" cellspacing="0">
+<tr>
+<td  colspan="1" rowspan="1" style="width:720px;"  valign="top" align="left" id="WPpageBottom1_C1R1" class="C1NodeNavigation3FDT"><div class="C5CommonFooter5LT_C1R1" > 
+
+
+
+<meta name="verify-v1" content="Zs9Ek2sreSzWQAUHkUbaajV9TRDIz4tF8EqjPJdQMSg=">
+
+
+
+<table class="enclosing_table">
+
+    <TR>
+
+		<TD valign="top">
+		  <TABLE class="column_one">
+		  <TR>
+			<TD colspan="2" class="node_title  font_bold ">
+			Shop With Confidence</TD>
+
+		  </TR>
+		  <TR>
+			<TD class="footer_links">
+
+			    <ul>  
+                      <li>
+					    <a href="http://www.shoppersstop.com/secureShopping.jsp.vr" class="color_footer_white">Secure Shopping</a>
+					  </li>
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/customerCare.jsp.vr" class="color_footer_white">Customer Care</a>
+					  </li>
+					  
+                      <li>
+
+					    <a href="http://www.shoppersstop.com/privacyPolicy.jsp.vr" class="color_footer_white">Privacy Policy</a>
+					  </li>
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/termsOfUse.jsp.vr" class="color_footer_white">Terms of Use</a>
+					  </li>
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/specialOffers.jsp.vr" class="color_footer_white">Special Offers</a>
+
+					  </li>
+                </ul>
+			</TD>
+			<TD class="footer_links"> <ul>  
+                      <li>
+					    <a href="http://www.shoppersstop.com/shippingPolicy.jsp.vr" class="color_footer_white">Shipping Policy</a>
+					  </li>
+					  
+                      <li>
+
+					    <a href="http://www.shoppersstop.com/deliveriesReturns.jsp.vr" class="color_footer_white">Returns Policy</a>
+					  </li>
+
+                      <li>
+					    <a target="_blank" href="http://www.corporate.shoppersstop.com/ecom/sizecharts/index.html" class="color_footer_white">Size Guide</a>
+					  </li>
+                      <li>
+					    <a target="_blank" href="http://www.corporate.shoppersstop.com/ecom/buyingguides/index.html" class="color_footer_white">Buying Guide</a>
+
+					  </li>
+
+
+                </ul>
+			</TD>
+		  </TR>
+		  </TABLE>
+		</TD>
+		<TD class="back_image"><img src="/imageservlet?webImageName=delimiter_footer.jpg&languageId=EN"/></TD>
+		<TD valign="top">
+
+		  <TABLE class="column_two">
+		  <TR>
+			<TD colspan="2" class="node_title  font_bold ">
+			Customer Service</TD>
+
+		  </TR>
+		  <TR>
+			<TD class="footer_links">
+			    <ul>  
+                      <li>
+
+					    <a href="https://www.shoppersstop.com/accountHome.jsp.vr" class="color_footer_white">My Account</a>
+					  </li>
+					  
+                      <li>
+					    <a href="https://www.shoppersstop.com/accountOrderStatus.jsp.vr" class="color_footer_white">Order Status</a>
+					  </li>
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/contactus.jsp.vr" class="color_footer_white">Contact Us</a>
+
+					  </li>
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/feedback.jsp.vr" class="color_footer_white">Feedback</a>
+					  </li>
+                      
+                      <li>
+					    <a href="http://www.shoppersstop.com/siteMap.jsp.vr" class="color_footer_white">Site Map</a>
+					  </li>
+                </ul>
+
+			</TD>
+			<TD class="footer_links"> <ul>
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/deliveryArea.jsp.vr" class="color_footer_white">Delivery Area</a>
+					  </li>
+					   
+                      <li>
+					    <a href="http://www.shoppersstop.com/paymentOption.jsp.vr" class="color_footer_white">Payment Options</a>
+
+					  </li>
+
+					  
+                      <li>
+					    <a href="http://www.shoppersstop.com/faqs.jsp.vr" class="color_footer_white">FAQS</a>
+					  </li>
+
+
+                      <li>
+					    <a href="http://www.shoppersstop.com/howtoshop.jsp.vr" class="color_footer_white">How to Shop</a>
+
+					  </li>
+
+
+                </ul>
+			</TD>
+		  </TR>
+		  </TABLE>
+		</TD>
+<TD class="back_image"><img src="/imageservlet?webImageName=delimiter_footer.jpg&languageId=EN"/></TD>
+		<TD valign="top">
+
+		 <TABLE class="column_three">
+		 <TR>
+			<TD class="node_title_2  font_bold ">
+			About Shoppers Stop</TD>
+		 </TR>
+		 <TR>
+			<TD class="footer_links"><ul>
+
+                      <li>
+
+					    <a href="http://corporate.shoppersstop.com" class="color_footer_white">Corporate Site</a>
+					  </li>
+					   <!--VR4Utilities:GetLink href="/storeLocator.jsp" varLink="nodeLink"/-->
+                      <li>
+					    <a href="http://corporate.shoppersstop.com/stores.aspx" target="_blank" class="color_footer_white">Store Locator</a>
+					  </li>
+					  </ul>
+			</TD>
+
+		 </TR>
+		 </TABLE>
+		</TD>
+				<TD class="back_image"><img src="/imageservlet?webImageName=delimiter_footer.jpg&languageId=EN"/></TD>
+		<TD valign="top"><TABLE class="column_four">
+		<TR>
+			<TD class="node_title  font_bold ">
+			First Citizen</TD>
+
+		</TR>
+		<TR>
+			<TD class="footer_links"><ul>
+
+                      <li>
+					    <a href="http://www.corporate.shoppersstop.com/Brand/Firstcitizen/first-citizen.aspx" target="_blank" class="color_footer_white">First Citizen Reward Points</a>
+					  </li>
+					   
+                      <li>
+					    <a href="http://www.corporate.shoppersstop.com/ecom/firstcitizen/faq.html" target="_blank" class="color_footer_white">First Citizen FAQ'S</a>
+
+					  </li>
+                      
+                      
+                       <li>
+					    <a href="http://www.shoppersstop.com/cat-first-citizen-loyalty-262.html" class="color_footer_white">Become a First Citizen</a>
+					  </li>
+                      <li>
+					    <a href="http://www.corporate.shoppersstop.com/ecom/citibankcreditcard/index.html" target="_blank" class="color_footer_white">First Citizen Citibank <br/>Credit Card</a>
+					  </li>
+
+                      </ul>
+			</TD>
+		</TR>
+		</TABLE>
+		</TD>
+    </TR>
+</table></div></td>
+
+<td  colspan="1" rowspan="1" style="width:280px;"  valign="top" align="left" id="WPpageBottom1_C2R1" class="CXImageMapSSLExternalLinkFDT"><div class="C5CommonFooter5LT_C2R1" > 
+
+
+<form name="shopByFormLink" action="http://www.shoppersstop.com/formhandlerservlet" method="get"><input type="hidden" name="actionName" value="mustBeSetThroughJavaScript"/><input type="hidden" name="targetNodeLink" value="mustBeSetThroughJavaScript"/><input type="hidden" name="currentNodeLink" value="/index.jsp"/><input type="hidden" name="formName" value="shopByFormLink"/> <input type="hidden" name="categoryName" value=""/> <map id="myMap5" name="myMap5"> <area shape="rect" alt="Security Logo" href="javascript:showFrame('https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.shoppersstop.com&lang=en','verisign')" coords="7,3,89,53" target="" rel="" /> <area shape="rect" alt="Mastercard SecureCode" href="javascript:showFrame('http://www.mastercard.com/us/business/en/corporate/securecode/sc_popup.html?language=en','master')" coords="105,5,177,60" target="" rel="" /> <area shape="rect" alt="Verified by VISA" href="javascript:showFrame('http://www.corporate.shoppersstop.com/ecom/vbv/vbv.html','visa')" coords="193,6,258,54" target="" rel="" /> <area shape="rect" alt="Facebook" href="http://www.facebook.com/shoppersstopindia" coords="161,85,185,114" target="_blank" rel="nofollow" /> <area shape="rect" alt="Twitter" href="http://twitter.com/shoppersstop" coords="191,88,213,111" target="_blank" rel="nofollow" /> </map> <img title="shop" usemap="#myMap5" src="http://a248.g.akamai.net/f/248/61347/6h/www.shoppersstop.com/imageservlet?webImageName=sec_media_v2.gif&amp;languageId=EN" alt="shop" /> <input type="hidden" id="searchStringId" name="searchString" value=""/> </form>
+
+<script type="text/javascript">
+    function shopBySearch(cat) {
+        //$('searchStringId').value = cat;
+	var catstr=cat;
+	if(catstr.length>9)
+	{	var temp = new Array();
+		temp =catstr.split(' ');
+		var sub=temp[0].substr(9);
+	}
+	document.forms['shopByFormLink'].categoryName.value =sub;
+    document.forms['shopByFormLink'].searchString.value = cat;
+    document.forms['shopByFormLink'].actionName.value = 'shoppersBasicSearch';
+	document.forms['shopByFormLink'].targetNodeLink.value = '/shopBy.jsp';
+    document.forms['shopByFormLink'].submit();
+    }
+
+   function showFrame(url,type){
+        if(type=='verisign'){
+            window.open(url,'noiframe','resizable=yes,width=550,height=600')
+        }
+
+        if(type=='master'){
+           window.open(url,'noiframe','resizable=yes,width=550,height=500')
+        }
+
+        if(type=='visa'){
+           window.open(url,'noiframe','resizable=yes,width=1000,height=400')
+        }
+   }
+</script>
+</div></td>
+
+</tr>
+<tr>
+<td  colspan="1" rowspan="1" style="width:720px;"  valign="top" align="left" id="WPpageBottom1_C1R2" class="CXHtmlTag1FDT"><div class="C5CommonFooter5LT_C1R2" > 
+
+
+
+
+
+
+
+
+
+<p class=" size_small " >
+	&copy; 2008  - 2010 Shoppers Stop Ltd. All Rights Reserved.	
+</p>
+
+</div></td>
+
+<td  colspan="1" rowspan="1" style="width:280px;"  valign="top" align="left" id="WPpageBottom1_C2R2" class="CXHtmlTag1FDT"><div class="C5CommonFooter5LT_C2R2" > 
+
+
+
+<p class=" size_small " >
+
+	Powered by <a href='http://www.novator.com' target='_blank' class='novator_footer'>Novator Systems</a>	
+</p>
+
+</div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+</div></body>
+
+
+</html>

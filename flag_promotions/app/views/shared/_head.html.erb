@@ -1,0 +1,10 @@
+<title><%= title %></title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<%== meta_data_tags %>
+<%== stylesheet_tags %>
+<%= csrf_meta_tag %>
+<%= javascript_include_tag 'shop/ajax_mootools','shop/HyvWbIfaErJ','shop/dropdown','shop/mootools','shop/omniture_s_code_1','shop/qlO-v-YlryA','shop/swfobject','shop/vr4_website','shop/wFcdvtg8yWA' %>
+<% unless I18n.locale.to_s[0..1] == 'en' %>
+  <%= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join %>
+<% end %>
+<%= yield :head %>
